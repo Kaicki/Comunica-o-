@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarioGram</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  height:100vh;
+  display:flex;
+  background:#0f0f0f;
+  color:white;
+}
+
+/* Lado esquerdo */
+.left{
+  flex:1;
+  background:linear-gradient(135deg,#1a001f,#4b0082);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  text-align:center;
+}
+
+.left h1{
+  font-size:42px;
+  margin:0;
+  color:#bb86fc;
+}
+
+.left p{
+  font-size:16px;
+  margin-top:10px;
+  color:#ddd;
+}
+
+/* Lado direito */
+.right{
+  flex:1;
+  background:#121212;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card{
+  width:80%;
+  max-width:350px;
+  text-align:center;
+}
+
+button{
+  width:100%;
+  padding:15px;
+  margin:12px 0;
+  border:none;
+  border-radius:15px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+/* Botão Login */
+.login{
+  background:#6a0dad;
+  color:white;
+  box-shadow:0 0 15px #6a0dad;
+}
+
+.login:hover{
+  background:#8a2be2;
+  box-shadow:0 0 25px #8a2be2;
+}
+
+/* Botão Registro */
+.registro{
+  background:#2a2a2a;
+  color:#bb86fc;
+  border:1px solid #6a0dad;
+}
+
+.registro:hover{
+  background:#1f1f1f;
+}
+</style>
+</head>
+
+<body>
+
+<div class="left">
+  <h1>MarioGram 🟣</h1>
+  <p>Conectando toda a escola Mario<br>
+  Poste fotos e converse com sua turma.</p>
+</div>
+
+<div class="right">
+  <div class="card">
+    <button class="login">Entrar</button>
+    <button class="registro">Criar Conta</button>
+  </div>
+</div>
+
+</body>
+</html>
